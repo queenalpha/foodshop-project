@@ -1,9 +1,9 @@
-<script>
+<script setup>
 import { useHead } from "#imports";
 
 useHead({
     titleTemplate: "%s - Food Shop", 
-    title: "MyApp", 
+    title: "Foodshop", 
     meta: [
         { name: "description", content: "Website MyApp" }
     ]

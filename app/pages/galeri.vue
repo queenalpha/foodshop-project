@@ -1,13 +1,10 @@
 <script setup>
 import { useMealStore } from "@/stores/meal";
+import { useHead } from "#imports";
 
-useHead({
-   title: "Gallery"
-});
-
+useHead({ title: "Gallery" });
 
 const mealStore = useMealStore();
-
 await mealStore.fetchMeals("");
 </script>
 
@@ -16,4 +13,3 @@ await mealStore.fetchMeals("");
       <Card :limit="30" />
    </div>
 </template>
-

@@ -5,7 +5,7 @@ useHead({
     titleTemplate: "%s - Food Shop", 
     title: "Foodshop", 
     meta: [
-        { name: "description", content: "Website Foodshop - Fahri" }
+        { name: "description", content: "Website - Foodshop Fahri" }
     ]
 });
 </script>

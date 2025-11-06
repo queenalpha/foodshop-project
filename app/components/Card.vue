@@ -25,3 +25,4 @@ const add = (meal) => cartStore.addToCart(meal);
         </div>
     </div>
 </template>
+

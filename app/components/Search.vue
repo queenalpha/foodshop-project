@@ -1,14 +1,9 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref } from "vue";
 import { useMealStore } from "@/stores/meal";
 
 const mealStore = useMealStore();
 const keyword = ref("");
-
-// Auto load makanan saat halaman dibuka
-onMounted(() => {
-    mealStore.fetchMeals(""); // kosong berarti ambil semua
-});
 
 const search = () => {
     mealStore.fetchMeals(keyword.value);
@@ -21,8 +16,6 @@ const search = () => {
         <button @click="search" class="search-btn">Search</button>
     </div>
 </template>
-
-
 
 <style scoped>
 .search-container {

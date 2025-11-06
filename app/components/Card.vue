@@ -2,25 +2,16 @@
 import { useMealStore } from "@/stores/meal";
 import { useCartStore } from "@/stores/cart";
 
-const props = defineProps({
-    limit: {
-        type: Number,
-        default: null,
-    },
-});
-
+const props = defineProps({ limit: { type: Number, default: null } });
 const mealStore = useMealStore();
 const cartStore = useCartStore();
 
-const add = (meal) => {
-    cartStore.addToCart(meal);
-};
+const add = (meal) => cartStore.addToCart(meal);
 </script>
 
 <template>
     <div v-if="mealStore.loading">Loading...</div>
     <div v-else-if="mealStore.error">Error: {{ mealStore.error.message }}</div>
-
     <div v-else class="food-grid">
         <div v-for="meal in (props.limit ? mealStore.meals.slice(0, props.limit) : mealStore.meals)" :key="meal.idMeal"
             class="food-card">

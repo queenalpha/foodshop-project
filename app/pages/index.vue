@@ -1,3 +1,11 @@
+<script setup>
+import { useMealStore } from "@/stores/meal";
+
+const mealStore = useMealStore();
+
+await mealStore.fetchMeals("");
+</script>
+
 <template>
     <Hero/>
     <div class="home">

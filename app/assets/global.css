@@ -10,12 +10,6 @@ body {
     scroll-behavior: smooth;
 }
 
-.home {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
 .food-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -57,12 +51,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-@media (max-width: 640px) {
-    .food-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 .btn-add {

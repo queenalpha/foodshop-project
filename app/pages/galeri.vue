@@ -9,7 +9,7 @@ await mealStore.fetchMeals("");
 </script>
 
 <template>
-   <div>
+   <div style="margin: 10px;">
       <Card :limit="30" />
    </div>
 </template>

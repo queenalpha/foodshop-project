@@ -17,11 +17,12 @@ const add = (meal) => cartStore.addToCart(meal);
             class="food-card">
             <img :src="meal.strMealThumb" :alt="meal.strMeal" class="food-image" />
             <div class="food-info">
-                <h3 class="food-title">{{ meal.strMeal }}</h3>
                 <div class="food-footer">
+                    <h3 class="food-title">{{ meal.strMeal }}</h3>
                     <button @click="add(meal)" class="btn-add">Tambah</button>
                 </div>
             </div>
+
         </div>
     </div>
 </template>

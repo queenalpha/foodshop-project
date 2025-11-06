@@ -59,6 +59,12 @@ body {
     align-items: center;
 }
 
+@media (max-width: 640px) {
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .btn-add {
     background: #ff6b00;
     border: none;

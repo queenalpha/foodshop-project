@@ -3,7 +3,7 @@
         <div class="jumbotron-content">
             <h1>Welcome to Food Shop</h1>
             <p>Find Your Favorite Foods and Enjoy Shopping Experience with Easy and Fast.</p>
-            <NuxtLink to="/galeri" class="btn-primary">Lihat Menu</NuxtLink>
+            <NuxtLink to="/galeri" class="btn-primary">See Menu</NuxtLink>
         </div>
     </section>
 </template>
@@ -22,7 +22,6 @@
     position: relative;
 }
 
-/* Overlay */
 .jumbotron::before {
     content: "";
     position: absolute;
@@ -62,7 +61,6 @@
     background: #e56900;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .jumbotron h1 {
         font-size: 2rem;

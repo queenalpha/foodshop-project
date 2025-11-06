@@ -16,7 +16,7 @@ export const useMealStore = defineStore("mealStore", {
 
             try {
                 const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`;
-                const data = await $fetch(url); // Gunakan $fetch, bukan useFetch
+                const data = await $fetch(url); 
                 this.meals = data?.meals || [];
             } catch (err) {
                 this.error = err;

@@ -1,3 +1,14 @@
+<script>
+import { useHead } from "#imports";
+
+useHead({
+    titleTemplate: "%s - Food Shop", 
+    title: "MyApp", 
+    meta: [
+        { name: "description", content: "Website MyApp" }
+    ]
+});
+</script>
 <template>
     <div class="layout-default">
         <Navbar />
@@ -19,6 +30,5 @@
 
 main {
     flex: 1;
-    /* Agar footer tetap di bawah */
 }
 </style>

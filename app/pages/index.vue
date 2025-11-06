@@ -1,6 +1,10 @@
 <script setup>
 import { useMealStore } from "@/stores/meal";
 
+useHead({
+    title: "Home" 
+});
+
 const mealStore = useMealStore();
 
 await mealStore.fetchMeals("");
@@ -15,11 +19,3 @@ await mealStore.fetchMeals("");
         </div>
     </div>
 </template>
-
-<style scoped>
-.home {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-</style>

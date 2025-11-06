@@ -12,7 +12,7 @@ const search = () => {
 
 <template>
     <div class="search-container">
-        <input v-model="keyword" @keyup.enter="search" type="text" placeholder="Cari makanan..." class="search-input" />
+        <input v-model="keyword" @keyup.enter="search" type="text" placeholder="Search Foods..." class="search-input" />
         <button @click="search" class="search-btn">Search</button>
     </div>
 </template>
